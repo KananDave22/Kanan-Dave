@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className='m-8 flex items-center justify-center gap-4 text-2xl'>
             <a href="https://www.linkedin.com/in/dave-kanan/"><FaLinkedin /></a>
             <a href="https://github.com/KananDave22"><FaGithub /></a>
-            <a href="https://drive.google.com/file/d/17VB507inVn1g36iJL2RbyaHJIUlCsv60/view?usp=sharing" className='p-2 rounded-xl border-0 bg-neutral-800 cursor-pointer'>Resume</a>
+            <a href="https://drive.google.com/file/d/18GmjtfGuVh_gt96Izkavp0RDrjkbgogD/view?usp=sharing" className='p-2 rounded-xl border-0 bg-neutral-800 cursor-pointer'>Resume</a>
         </div>
     </nav>
   )

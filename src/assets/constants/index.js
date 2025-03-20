@@ -1,7 +1,7 @@
 import project1 from "../Project-1.png"
 import project2 from "../Project-2.png"
 import project3 from "../Project-3.png"
-import nirma from "../Nirma_Logo.jpeg"
+import nirma from "../NirmaLogo.jpg"
 import windsor from "../windsorlogo.png"
 
 export const HERO_CONTENT = `Full Stack Developer with a Master’s in Electrical and Computer Engineering. Adept at building scalable web applications and experienced in front-end development, UI/UX design, and integrating user insights for enhanced engagement. Proficient in Agile environments, delivering accessible and responsive interfaces. Passionate about solving complex problems and continuously learning new technologies.`;

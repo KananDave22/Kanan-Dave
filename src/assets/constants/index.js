@@ -1,19 +1,27 @@
 import project1 from "../Project-1.png"
 import project2 from "../Project-2.png"
-import project3 from "../Project-3.png"
+import project3 from "../Project-3.jpg"
 import nirma from "../NirmaLogo.jpg"
 import windsor from "../windsorlogo.png"
 
-export const HERO_CONTENT = `Full Stack Developer with a Master’s in Electrical and Computer Engineering. Adept at building scalable web applications and experienced in front-end development, UI/UX design, and integrating user insights for enhanced engagement. Proficient in Agile environments, delivering accessible and responsive interfaces. Passionate about solving complex problems and continuously learning new technologies.`;
+export const HERO_CONTENT = `Full Stack Developer | Driven by Curosity and a lover for learning`;
 
-export const ABOUT_CONTENT = `As a Full Stack Developer with a Master’s in Electrical and Computer Engineering, I bring a unique blend of technical expertise and creative design skills to the table. My professional journey has spanned crafting seamless user interfaces, building responsive and accessible web solutions, and enhancing user engagement through data-driven design insights. 
-
-During my career, I’ve honed my skills in React, JavaScript, and CSS while collaborating in Agile environments to deliver high-quality, scalable applications. My experience includes developing dynamic front-end components, optimizing UI/UX designs, and ensuring accessibility compliance with scores exceeding 90%.
-
-I thrive in team-oriented settings, where I contribute to solving complex challenges and improving user satisfaction. With a passion for learning new technologies and a commitment to delivering excellence, I am eager to create meaningful, cutting-edge digital experiences.
+export const ABOUT_CONTENT = `Full Stack Developer with 1.5 years of experience and a Master’s in Electrical and Computer Engineering. Skilled in React, JavaScript, CSS, HTML, Node.js, Express, and MongoDB, I specialize in Front-End development, building responsive, accessible, and high-performing web applications. Passionate about full-stack development, front-end development, web development and UI/UX design, I thrive in Agile, collaborative environments and enjoy creating meaningful, cutting-edge digital experiences..
 `;
 
 export const EXPERIENCES = [
+
+    {
+      year: "Aug 2025 - Sep 2025",
+      role: "UI Developer Intern",
+      company: "Quantum Edge Consulting",
+      description: `• Enhanced user experience by reducing navigation latency by 30% through the development and optimization of app navigation and routing flows in FlutterFlow. 
+      • Improved app usability and responsiveness by 25% by implementing dynamic UI logic & interactive screen transitions.
+      • Achieved smooth data synchronization across the app by collaborating with backend engineers to integrate APIs.
+      • Contributed to the design and front-end development of major app modules, including SoulMatch, Karma System, and Emotional Simulation, resulting in a 20% increase in user engagement.
+`,
+      technologies: ["FlutterFlow", "Firebase", "API", "GIT Version Control", "Tailwind CSS", "HTML", "JavaScript", "Microsoft Office"],
+    },
     {
       year: "Sep 2024 - Dec 2024",
       role: "Full Stack Developer Intern",
@@ -74,12 +82,11 @@ export const PROJECTS = [
   }, 
 
   {
-    title: "HR Analytics Dashboard",
+    title: "News Aggregator Web Application",
     image: project3,
-    description: `• Designed a Power BI dashboard to visualize and analyze performance data, tracking trends and performance metrics.
-    • Utilized Power Query for data cleaning and transformation, ensuring data accuracy and consistency.
-    • Created dynamic visualizations with slicers and filters to enable interactive data exploration for stakeholders.`,
-    technologies : ["Power BI", "Power Query", "Microsoft Excel"],
+    description: `• Developed a dynamic news aggregator that fetches real-time articles from multiple APIs, utilizing JavaScript, HTML, and CSS to create an interactive and user-friendly experience with client-side filtering and asynchronous data handling.
+    • Enhanced usability and engagement by implementing features such as category selection, search functionality, and efficient state management, ensuring smooth performance across both desktop and mobile devices.`,
+    technologies : ["React.js", "JavaScript", "TailwindCSS", "HTML", "Restful API"],
   }
 ]
 

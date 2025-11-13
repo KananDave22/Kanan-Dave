@@ -9,8 +9,11 @@ import { SiCplusplus } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { SiFigma } from "react-icons/si";
 import { SiWordpress } from "react-icons/si";
-
+import { FaGithub } from "react-icons/fa";
 import { animate, motion } from "framer-motion";
+import { SiMysql } from 'react-icons/si';
+import { SiPostgresql } from 'react-icons/si';
+import { SiMongodb } from 'react-icons/si';
 
 const iconVariants = (duration) => ({
   initial: { y: -10 }, // Fixed syntax error
@@ -30,16 +33,19 @@ const Technologies = () => {
     { component: FaHtml5, color: "text-orange-500" },
     { component: FaCss3Alt, color: "text-blue-500" },
     { component: FaJs, color: "text-yellow-400" },
-    { component: BsBootstrap, color: "text-purple-600" },
-    { component: SiTailwindcss, color: "text-teal-500" },
     { component: RiReactjsLine, color: "text-cyan-400" },
+    { component: SiTailwindcss, color: "text-teal-500" },
+    { component: BsBootstrap, color: "text-purple-600" },
     { component: FaNodeJs, color: "text-green-500" },
     { component: FaJava, color: "text-red-600" },
     { component: FaPython, color: "text-blue-400" },
     { component: SiCplusplus, color: "text-blue-600" },
+    { component: FaGithub, color: "text-gray-100"},
+    {component: SiMysql, color: "text-blue-800"},
+    {component: SiPostgresql, color: "text-blue-700"},
+    {component: SiMongodb, color: "text-green-600"},
     { component: SiFigma, color: "text-pink-500" },
-    { component: SiWordpress, color: "text-blue-600" },
-    
+    { component: SiWordpress, color: "text-blue-600" }, 
   ];
 
   return (
@@ -49,7 +55,7 @@ const Technologies = () => {
           {icons.map(({ component: Icon, color }, index) => (
             <div
               key={index}
-              className="rounded-2xl border-4 border-neutral-800 p-4"
+              className="rounded-2xl border-4 border-neutral-800 p-3"
             >
               <Icon className={`text-7xl ${color}`} />
             </div>

@@ -92,7 +92,7 @@ const Hero = () => {
             variants={container(0.3)}
             initial="hidden"
             animate="visible"
-            className="text-lg lg:text-xl font-light text-indigo-800 leading-relaxed mb-4"
+            className="text-lg lg:text-xl font-light text-indigo-400 leading-relaxed mb-4"
           >
             {HERO_CONTENT}
           </motion.p>
@@ -102,7 +102,7 @@ const Hero = () => {
             variants={container(0.6)}
             initial="hidden"
             animate="visible"
-            className="text-sm lg:text-base font-light text-neutral-500 leading-relaxed"
+            className="text-sm lg:text-base font-light text-neutral-100 leading-relaxed"
           >
             {ABOUT_CONTENT}
           </motion.p>

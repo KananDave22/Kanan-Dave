@@ -14,7 +14,7 @@ const About = () => {
         {/* Text - part */}
         <div className="w-full lg:w-1/2 lg:p-8">
           <div className="flex justify-center lg:justify-start">
-            <p className="mb-2 max-w-xl text-xl tracking-normal font-thin">
+            <p className="mb-2 max-w-xl text-xl tracking-normal !text-white-900 opacity-100">
               {ABOUT_CONTENT}
             </p>
           </div>

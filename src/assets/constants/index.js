@@ -4,7 +4,7 @@ import project3 from "../Project-3.jpg"
 import nirma from "../NirmaLogo.jpg"
 import windsor from "../windsorlogo.png"
 
-export const HERO_CONTENT = `Full Stack Developer | Driven by Curosity and a lover for learning`;
+export const HERO_CONTENT = `Full Stack Developer | Driven by Curosity and a love for learning`;
 
 export const ABOUT_CONTENT = `Full Stack Developer with 1.5 years of experience and a Master’s in Electrical and Computer Engineering. Skilled in React, JavaScript, CSS, HTML, Node.js, Express, and MongoDB, I specialize in Front-End development, building responsive, accessible, and high-performing web applications. Passionate about full-stack development, front-end development, web development and UI/UX design, I thrive in Agile, collaborative environments and enjoy creating meaningful, cutting-edge digital experiences..
 `;

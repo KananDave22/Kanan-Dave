@@ -1,4 +1,3 @@
-import React from "react";
 import about_image from "../assets/Kanan_AboutSectionImage.jpg";
 import { ABOUT_CONTENT } from "../assets/constants";
 

@@ -83,6 +83,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .contact-copy h2 em { color: var(--accent); font-weight: 500; }
 .hero-role { margin: 23px 0 12px; color: var(--ink); font-size: 15px; font-weight: 600; }
 .hero-intro { max-width: 580px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.9; }
+.hero-intro p { margin: 0 0 10px; }
+.hero-intro p:last-child { margin-bottom: 0; }
 .hero-actions { display: flex; align-items: center; gap: 24px; margin-top: 28px; }
 .button-primary { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; gap: 16px; padding: 0 16px; border: 1px solid var(--accent); color: var(--page); background: var(--accent); font-size: 11px; font-weight: 600; text-decoration: none; cursor: pointer; transition: background-color 160ms ease, border-color 160ms ease; }
 .button-primary:hover { border-color: var(--accent-strong); background: var(--accent-strong); }
@@ -107,15 +109,20 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .compact-heading .eyebrow { margin: 0; }
 .compact-heading h2 { margin: 0; font-family: var(--font-display); font-size: 25px; font-weight: 500; }
 .skills-section { padding-top: 36px; padding-bottom: 42px; }
-.skills-grid { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.toolkit-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.skills-category { min-width: 0; }
+.skills-category h3 { margin: 0 0 10px; color: var(--ink); font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.skills-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .skill-item { min-height: 94px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 9px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); color: var(--muted); font-size: 10px; }
 .skill-item svg { width: 21px; height: 21px; }
 
-.experience-list { border-top: 1px solid var(--line); }
-.experience-item { display: grid; grid-template-columns: 1fr 2.6fr; gap: 24px; padding: 28px 0 31px; border-bottom: 1px solid var(--line); }
-.experience-date { margin: 5px 0 0; color: var(--muted); font-size: 11px; }
-.experience-details { position: relative; padding-left: 36px; }
-.item-index { position: absolute; left: 0; top: 2px; margin: 0; color: var(--accent); font-size: 10px; }
+.experience-list { display: grid; gap: 12px; }
+.experience-item { display: grid; grid-template-columns: 220px 1fr; gap: 30px; min-height: 210px; padding: 26px 28px; border: 1px solid var(--line); background: var(--tag); }
+.experience-meta { position: relative; padding: 4px 24px 4px 38px; border-right: 1px solid var(--line); }
+.experience-date { display: inline-block; margin: 0 0 12px; padding: 5px 8px; border-left: 2px solid var(--accent); color: var(--ink); background: var(--tag); font-family: var(--font-display); font-size: 14px; font-weight: 700; line-height: 1.4; }
+.experience-company { margin: 0; color: var(--accent); font-family: var(--font-display); font-size: 17px; line-height: 1.3; }
+.experience-details { min-width: 0; }
+.item-index { position: absolute; left: 0; top: 4px; margin: 0; color: var(--accent); font-size: 10px; font-weight: 700; }
 .experience-details h3, .education-item h3, .project-copy h3 { margin: 0; font-family: var(--font-display); font-size: 22px; font-weight: 500; }
 .item-company { margin: 5px 0 13px; color: var(--accent); font-size: 12px; }
 .detail-list { display: grid; gap: 7px; margin: 0 0 18px; padding-left: 16px; color: var(--muted); font-size: 11px; line-height: 1.8; }
@@ -193,11 +200,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .section { padding: 61px 0; }
   .skills-section { padding-top: 31px; padding-bottom: 35px; }
   .skills-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .toolkit-grid { grid-template-columns: 1fr; }
   .section-heading { grid-template-columns: 1fr; gap: 9px; }
   .section-heading h2, .section-intro { grid-column: 1; grid-row: auto; }
   .section-heading h2 { font-size: 34px; }
-  .experience-item { grid-template-columns: 1fr; gap: 10px; padding: 23px 0; }
-  .experience-details { padding-left: 30px; }
+  .experience-item { grid-template-columns: 1fr; gap: 18px; padding: 22px 20px; }
+  .experience-meta { padding: 4px 0 14px 38px; border-right: 0; border-bottom: 1px solid var(--line); }
+  .experience-details { padding-left: 38px; }
   .education-item { grid-template-columns: 24px 78px 1fr; gap: 12px; }
   .education-item img { height: 46px; }
   .education-item h3 { font-size: 16px; }

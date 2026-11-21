@@ -57,12 +57,16 @@ import { motion, useReducedMotion } from "framer-motion";
 
 const Hero = () => {
   const shouldReduceMotion = useReducedMotion();
+  const aboutParagraphs = ABOUT_CONTENT
+    .split(/\n\s*\n/)
+    .map((paragraph) => paragraph.trim())
+    .filter((paragraph) => paragraph && !paragraph.includes("React · Angular"));
 
   return (
     <section className="hero-section" aria-labelledby="hero-title">
       <div className="hero-overline">
         <span>Portfolio <b>·</b> 2026</span>
-        <span>Windsor, Ontario <i> / </i> Available for opportunities</span>
+        <span>Ontario, Canada <i> / </i> Available for opportunities</span>
       </div>
       <div className="hero-layout">
         <motion.div
@@ -74,7 +78,11 @@ const Hero = () => {
           <p className="eyebrow"><span className="status-dot" /> A developer with a design eye</p>
           <h1 id="hero-title"><span>Build with</span><em>intention.</em></h1>
           <p className="hero-role">{HERO_CONTENT}</p>
-          <p className="hero-intro">{ABOUT_CONTENT}</p>
+          <div className="hero-intro">
+            {aboutParagraphs.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </div>
           <div className="hero-actions">
             <a className="button-primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
             <a className="text-link" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
@@ -93,7 +101,7 @@ const Hero = () => {
           <figcaption className="portrait-caption"><span>Curiosity, made useful</span><span>Developer · Designer</span></figcaption>
         </motion.figure>
       </div>
-      <div className="hero-bottomline"><span>Full-stack development <i>·</i> UI/UX</span><a href="#skills-title"><span className="scroll-line" /> Scroll to explore</a></div>
+      <div className="hero-bottomline"><span>Full-stack development</span><a href="#skills-title"><span className="scroll-line" /> Scroll to explore</a></div>
     </section>
   );
 };

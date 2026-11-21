@@ -11,11 +11,13 @@ const Experience = () => {
       <div className="experience-list">
         {EXPERIENCES.map((experience, index) => (
           <article className="experience-item" key={`${experience.company}-${experience.year}`}>
-            <p className="experience-date">{experience.year}</p>
-            <div className="experience-details">
+            <div className="experience-meta">
               <p className="item-index">0{index + 1}</p>
+              <p className="experience-date">{experience.year}</p>
+              <p className="experience-company">{experience.company}</p>
+            </div>
+            <div className="experience-details">
               <h3>{experience.role}</h3>
-              <p className="item-company">{experience.company}</p>
               <ul className="detail-list">
                 {experience.description.split("•").map((item, itemIndex) => item.trim() ? <li key={itemIndex}>{item.trim()}</li> : null)}
               </ul>

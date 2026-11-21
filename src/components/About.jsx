@@ -2,6 +2,11 @@ import about_image from "../assets/Kanan_AboutSectionImage.jpg";
 import { ABOUT_CONTENT } from "../assets/constants";
 
 const About = () => {
+  const [title, ...paragraphs] = ABOUT_CONTENT
+    .split(/\n\s*\n/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean);
+
   return (
     <div className="border-b border-neutral-700 pb-4">
       <h2 className="my-8 text-center text-4xl">
@@ -12,10 +17,13 @@ const About = () => {
        
         {/* Text - part */}
         <div className="w-full lg:w-1/2 lg:p-8">
-          <div className="flex justify-center lg:justify-start">
-            <p className="mb-2 max-w-xl text-xl tracking-normal !text-white-900 opacity-100">
-              {ABOUT_CONTENT}
-            </p>
+          <div className="flex flex-col items-center lg:items-start">
+            <p className="mb-5 text-sm uppercase tracking-[0.2em] text-orange-400">{title}</p>
+            <div className="max-w-xl space-y-5 text-base leading-7 tracking-normal text-neutral-300">
+              {paragraphs.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
           </div>
         </div>
 

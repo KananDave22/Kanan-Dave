@@ -1,48 +1,34 @@
-import React from "react";
 import { EXPERIENCES } from "../assets/constants";
 
 const Experience = () => {
   return (
-    <div className="border-b border-neutral-700 pb-4">
-      <h2 className="my-10 text-center text-4xl">Experience</h2>
-      <div>
-        {EXPERIENCES.map((experience, index) => {
-          return (
-            <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-              <div className="w-full lg:w-1/4">
-                <p className="mb-2 text-sm text-neutral-400">
-                  {experience.year}
-                </p>
-              </div>
-              <div className="w-full max-w-xl lg: w-3/4">
-                <h6 className="mb-2 font-semibold ">
-                  {experience.role} -{" "}
-                  <span className=" text-blue-600">{experience.company}</span>
-                </h6>
-                {/* <p className="mb-4 text-neutral-400">{experience.description}</p> */}
-                <ul className="mb-4 list-disc pl-5 text-neutral-400">
-                  {experience.description
-                    .split("• ")
-                    .map((item, index) =>
-                      item ? <li key={index}>{item.trim()}</li> : null
-                    )}
-                </ul>
-                <div className="flex flex-wrap gap-2">
-                  {experience.technologies.map((tech, index) => (
-                    <span
-                      key={index}
-                      className="rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-blue-300"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+    <section className="section content-section" id="experience" aria-labelledby="experience-title">
+      <div className="section-heading">
+        <p className="eyebrow">The path so far</p>
+        <h2 id="experience-title">Experience</h2>
+        <p className="section-intro">A few roles and teams that have shaped the way I build.</p>
+      </div>
+      <div className="experience-list">
+        {EXPERIENCES.map((experience, index) => (
+          <article className="experience-item" key={`${experience.company}-${experience.year}`}>
+            <div className="experience-meta">
+              <p className="item-index">0{index + 1}</p>
+              <p className="experience-date">{experience.year}</p>
+              <p className="experience-company">{experience.company}</p>
+            </div>
+            <div className="experience-details">
+              <h3>{experience.role}</h3>
+              <ul className="detail-list">
+                {experience.description.split("•").map((item, itemIndex) => item.trim() ? <li key={itemIndex}>{item.trim()}</li> : null)}
+              </ul>
+              <div className="tag-list">
+                {experience.technologies.map((tech) => <span className="tag" key={tech}>{tech}</span>)}
               </div>
             </div>
-          );
-        })}
+          </article>
+        ))}
       </div>
-    </div>
+    </section>
   );
 };
 

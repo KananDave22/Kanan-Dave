@@ -4,13 +4,32 @@ import project3 from "../Project-3.jpg"
 import nirma from "../NirmaLogo.jpg"
 import windsor from "../windsorlogo.png"
 
-export const HERO_CONTENT = `Full Stack Developer | Driven by Curosity and a love for learning`;
+export const HERO_CONTENT = `Full Stack Developer | Driven by curiosity and a love for learning`;
 
-export const ABOUT_CONTENT = `Full Stack Developer with 1.5 years of experience and a Master’s in Electrical and Computer Engineering. Skilled in React, JavaScript, CSS, HTML, Node.js, Express, and MongoDB, I specialize in Front-End development, building responsive, accessible, and high-performing web applications. Passionate about full-stack development, front-end development, web development and UI/UX design, I thrive in Agile, collaborative environments and enjoy creating meaningful, cutting-edge digital experiences..
+export const ABOUT_CONTENT = `Full-Stack Developer | React · Angular · Node.js
+
+I'm a Full-Stack Developer with a Master of Engineering in Electrical & Computer Engineering from the University of Windsor. I started in embedded systems, then moved into web development because I wanted to see people use what I built, right away, in a browser.
+
+Today I work across the whole stack: React, Angular and Tailwind CSS on the front end, and Node.js, Express and databases like MongoDB and PostgreSQL on the back end. At Reknowledge, I build features end to end, from bulk file uploads with Azure Blob Storage to React interfaces that help modernize a legacy C#/.NET codebase. I also work with REST APIs, CI/CD pipelines in Azure DevOps, and code reviews. Earlier, at Vosyn, I focused on performance, accessibility and reusable UI components.
+
+I care about clean code, but I care more about whether it works for the person using it. I work best in collaborative Agile teams, and I'm always learning something new.
+
+I'm open to new opportunities. If you're building something worth building, let's talk.
 `;
 
 export const EXPERIENCES = [
-
+    {
+      year: "April 2026 - Present",
+      role: "Junior Software Developer",
+      company: "Reknowledge Inc",
+      description: `• Built and shipped end-to-end features on a MERN stack application, including a bulk file-upload system integrated with Azure Blob Storage, handling data flow from the React front end through Node/Express APIs to MongoDB.
+      • Developed React.js and Tailwind CSS interfaces for a legacy C#/.NET codebase undergoing active modernization, working across both legacy and new frontend layers to maintain feature parity during migration.
+      • Utilized Azure DevOps to manage CI/CD workflows, monitor and trigger build pipelines, validate deployments, and ensure reliable delivery of application updates across development environments.
+      • Conducted code reviews across both React and legacy codebases, maintaining code quality and consistency during the migration period.
+      • Collaborated cross-functionally in daily Agile ceremonies (standups, sprint planning, retrospectives), coordinating feature work across MERN and legacy systems.
+    `,
+      technologies: ["React.js", "Node.js", "Express.js", "JavaScript", "TypeScript", "C#", ".NET", "Azure Blob Storage", "Azure DevOps Services", "CI/CD Pipelines", "REST APIs", "Tailwind CSS", "HTML", "Git", "Agile", "Microsoft Office"],
+    },
     {
       year: "Aug 2025 - Sep 2025",
       role: "UI Developer Intern",
